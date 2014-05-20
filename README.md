@@ -1,5 +1,5 @@
 # Ruby on Rails Tutorial: sample application
-My first ruby on rails app!!!
+My first ruby on rails app!
 
 
 This is the sample application for
