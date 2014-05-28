@@ -1,0 +1,24 @@
+<h1>Tất cả các bài viết đều nằm ở đây</h1>
+
+<%= link_to 'Viết bài mới', new_article_path %>
+
+<table>
+	<tr>
+		<th>Tiêu đề</th>
+		<th>Nội dung</th>
+		<th colspan="3"></th>
+	</tr>
+	
+	<% @articles.each do |article| %>
+		<tr>
+			<td><%= article.title %></td>
+			<td><%= article.text %></td>
+			<td><%= link_to 'Xem bài viết', article_path(article) %></td>
+			<td><%= link_to 'Chỉnh sửa', edit_article_path(article) %></td>
+			<td><%= link_to 'Xóa bài viết', article_path(article),
+				method: :delete, data: { confirm: 'Bạn thật sự muốn xóa bài viết này?' } %></td>
+		<tr>
+	<% end %>
+</table>
+
+

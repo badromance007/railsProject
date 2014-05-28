@@ -1,0 +1,12 @@
+<p>
+	<strong>Tiêu đề:</strong>
+	<%= @article.title %>
+</p>
+
+<p>
+	<strong>Nội dung:</strong>
+	<%= @article.text %>
+</p>
+
+<%= link_to 'Quay lại', articles_path %>
+| <%= link_to 'Chỉnh sửa', edit_article_path(@article) %>
