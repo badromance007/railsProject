@@ -1,0 +1,21 @@
+<div class="mainContent">
+	<div class="content">
+	<% @articles.each do |article| %>
+		<article class="topcontent">
+			<header>
+				<h2>
+					<a href="#" rel="bookmark" title="Permalink to this POST TITLE"><%= article.title %></a>
+				</h2>
+			</header>
+			
+			<footer>
+				<p class="post-info">This was posted on <%= article.created_at.to_s(:long) %> by Tường Trọng Nguyễn</p>
+			</footer>
+			
+			<div class="detailContent">
+				<p><%= simple_format(article.text) %></p>
+			</div>
+		</article>
+	<% end %>
+	</div>
+</div> <!-- end mainContent -->
