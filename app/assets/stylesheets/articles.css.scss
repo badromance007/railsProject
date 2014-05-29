@@ -2,4 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* ===========================
+   ======= Content Area ====== 
+   =========================== */
+.mainContent {
+	line-height: 25px;
+	
+}
+
+.topcontent {
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin-bottom: 3%;
+}
+
+.content {
+	width: 68%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.post-info {
+	font-style: italic;
+	color: #369;
+	font-size: 85%;
+}
 

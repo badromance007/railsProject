@@ -50,7 +50,13 @@ body {
 }   
 .mainHeader nav ul li:first-child a { 
 	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 	
+}
+.mainHeader nav li.active:first-child a:link, .mainHeader nav li.active:first-child a:visited {
+	-o-border-image:      url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 0;
+	-ms-border-image:     url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 0;
+	-moz-border-image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 0;
+	-webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 0;
 }
    
 .mainHeader nav {
@@ -110,16 +116,53 @@ body {
 	-ms-border-image:     url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D') 0 2 0 1;
 	-moz-border-image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D') 0 2 0 1;
 	-webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D') 0 2 0 1;
-	/* border */
-	
+	/* end border-right for link on navigation bar */	
 }
 .mainHeader nav a:hover, .mainHeader nav a:active {
+	/* background for when hover mouse */
 	background:
 		url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC') repeat-x 0 0,
 		url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D') repeat-y 100% 0,
 		url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC') repeat-y 0 0,
 		rgba(0, 0, 0, .4);
+	/* end background for when hover mouse */
+	color: #fff;
+	text-shadow: none !important;
 }
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
 	background: #333;
+	/* background for navigation bar when on state */
+	-o-border-image:      url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 1;
+	-ms-border-image:     url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 1;
+	-moz-border-image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 1;
+	-webkit-border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADklEQVQIHWNg8GUAAV8AAnEAm4WyilcAAAAASUVORK5CYII%3D') 0 2 0 1;
+	background:
+		-o-linear-gradient(top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%),
+		-o-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .2) 100%),
+		-o-linear-gradient(left, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, .2) 100%),
+		-o-linear-gradient(top, rgba(30, 30, 30, 1) 0, rgba(75, 75, 75, 1) 97%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%)
+	;
+	background:
+		-moz-linear-gradient(top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%),
+		-moz-linear-gradient(top, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .2) 100%),
+		-moz-linear-gradient(left, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, .2) 100%),
+		-moz-linear-gradient(top, rgba(30, 30, 30, 1) 0, rgba(75, 75, 75, 1) 97%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, .45) 100%)
+	;
+	background:
+		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .8)), color-stop(.1, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
+		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(.3, rgba(0, 0, 0, 0)), color-stop(.7, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))),
+		-webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(.2, rgba(0, 0, 0, 0)), color-stop(.8, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))),
+		-webkit-gradient(linear, 0 0, 0 100%, from(rgba(47, 47, 47, 1)), color-stop(0.97, rgba(75, 75, 75, 1)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45)))
+	;
+	/* end on state nav*/	
+	color: #fff;
+	text-shadow: none !important;
+}
+
+.mainHeader img {
+	width: 5%;
+	height: auto;	
+	border: 2px solid #B6BABF;
+	border-radius: 100%;
+	margin: 3% 0;
 }
