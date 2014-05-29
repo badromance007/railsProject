@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, except: [:index, :new]
+  before_action :set_article, except: %w(index new create)
 
   def new
   	@article = Article.new
@@ -10,6 +10,8 @@ class ArticlesController < ApplicationController
   end
   
   def create
+    @article = Article.new(article_params)
+
   	if @article.save
   		redirect_to @article
   	else
