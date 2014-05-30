@@ -4,7 +4,7 @@
 		<article class="topcontent">
 			<header>
 				<h2>
-					<a href="#" rel="bookmark" title="Permalink to this POST TITLE"><%= article.title %></a>
+					<a href="<%= article_path(article) %>" rel="bookmark" title="Permalink to <%= article.title %>"><%= article.title %></a>
 				</h2>
 			</header>
 			
@@ -18,4 +18,29 @@
 		</article>
 	<% end %>
 	</div>
+	
+		<aside class="top-sidebar">
+			<article>
+				<h2>Bài viết mới nhất</h2>
+				<p>Đây là phần dành cho bài viết mới nhất, nội dung sẽ được thêm sau.</p>
+			</article>
+		</aside>
+		
+		<aside class="middle-sidebar">
+			<article>
+				<h2>Xem nhiều nhất</h2>
+				<p>Đây là phần dành cho bài viết được xem nhiều nhất, nội dung sẽ được thêm sau.</p>
+			</article>
+		</aside>
+		
+		<aside class="bottom-sidebar">
+			<article>
+				<h2>Thể loại</h2>
+				<p>Đây là phần dành cho thể loại bài viết, nội dung sẽ được thêm sau.</p>
+			</article>
+		</aside>
 </div> <!-- end mainContent -->
+
+<footer class="mainFooter">
+	<p>Copyright &copy; 2014 <a href="#">Tường Nguyễn Blog</a></p>
+</footer>
