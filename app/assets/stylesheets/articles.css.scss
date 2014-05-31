@@ -7,7 +7,7 @@
    ======= Anchor style ====== 
    =========================== */
 a:link, a:visited {
-	color: #CF5C3F;
+	color: #0f2f4d;
 	padding: 0 1px;
 	text-decoration: none;
 }
@@ -167,6 +167,39 @@ a:hover, a:active {
 	
 	.mainHeader img {
 		width: 100%;
+	}
+	
+	.mainContent {
+		margin-top: 4%;
+		margin-bottom: 2%;
+	}
+	
+	.topcontent {
+		padding: 2% 5%;
+		margin-bottom: 4%;
+	}
+	.topcontent:last-child {
+		margin-bottom: 0;
+	}
+	
+	.content {
+		width: 100%;
+	}
+	
+	.top-sidebar, .middle-sidebar, .bottom-sidebar {
+		width: 86%;
+		margin-top: 4%;
+		margin-left: 0;
+		padding: 0 7%;
+		margin-bottom: 0;		
+	}
+	
+	.top-sidebar p, .middle-sidebar p, .bottom-sidebar p {
+		width: 90%;
+	}
+	
+	.mainFooter p {
+		width: 86%;
 	}
 }
 
