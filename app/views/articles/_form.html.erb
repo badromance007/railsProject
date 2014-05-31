@@ -12,15 +12,15 @@
 	
 	<p>
 		<%= f.label :title, "Tiêu đề" %><br>
-		<%= f.text_field :title %>
+		<%= f.text_field :title, :class => 'form-control', :placeholder => "Tiêu đề bài viết" %>
 	</p>
 	
 	<p>
 		<%= f.label :text, "Nội dung" %><br>
-		<%= f.text_area :text %>
+		<%= f.text_area :text, :class => 'form-control', :placeholder => "Nội dung bài viết" %>
 	</p>
 	
 	<p>
-		<%= f.submit "Đăng bài viết" %>
+		<%= f.submit "Đăng bài viết", :class => "btn btn-primary" %>
 	</p>
 <% end %>
