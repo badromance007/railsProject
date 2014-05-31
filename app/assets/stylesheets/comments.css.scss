@@ -2,3 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+
+/* ===========================
+   ======= content comments ====== 
+   =========================== */
+#header_comments {
+	background: #eeeeee;
+	margin: 10% 0 4% 0;
+	color: #9d234c;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+#comments_content {
+	margin: 4% 0 4% 0;
+}
+#comments_content strong, #comments_content span {
+	color: #666;
+}
+
+
+/* ===========================
+   ======= form comments ====== 
+   =========================== */
+.comments_form {
+	background: #f5f5f5;
+	width: 80%;
+	border-top: 1px solid #e5e5e5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 2% 5% 50px 5%;
+	margin: 6% 0 4% 0;
+}
+
+#comment_commenter {
+	width: 35%;
+}
+
+#comment_body{
+	width: 98%;
+}
+
+#submit_comments {
+	float: right;
+}

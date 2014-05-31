@@ -1,4 +1,4 @@
-<p>
+<p id="comments_content">
 	<%= comment.body %><br>
-	<strong><%= comment.commenter %></strong> <%= comment.created_at.to_s(:long) %>
+	<strong><%= comment.commenter %></strong> - <span><%= comment.created_at.to_s(:long) %></span>
 </p>		

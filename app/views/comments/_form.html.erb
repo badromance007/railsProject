@@ -1,15 +1,17 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
+<div class="comments_form">
 	<p>
 		<%= f.label :commenter, "Tên:" %><br>
-		<%= f.text_field :commenter %>
+		<%= f.text_field :commenter, :class => 'form-control', :placeholder => "Họ và tên" %>
 	</p>
 	
 	<p>
-		<%= f.label :body, "Nội dung bình luận" %><br>
-		<%= f.text_area :body %>
+		<%= f.label :body, "Nội dung bình luận:" %><br>
+		<%= f.text_area :body,  :class => 'form-control', :placeholder => "Ý kiến của bạn" %>
 	</p>
 	
 	<p>
-		<%= f.submit "Đăng bình luận" %>
+		<%= f.submit "Đăng bình luận", :class => "btn btn-danger", :id => "submit_comments" %>
 	</p>
+</div>
 <% end %>
