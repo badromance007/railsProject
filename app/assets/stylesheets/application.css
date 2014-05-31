@@ -106,8 +106,8 @@ body {
 .mainHeader nav a:link, .mainHeader nav a:visited {
 	color: #fff;
 	display: inline-block;
-	height: 30px;
-	padding: 5px 23px;
+	height: 20px; /*new*/
+	padding: 10px 23px; /*new*/
 	text-decoration: none;
 	/* border-right for link on navigation bar */
 	border-width:0 2px 0 1px; 
@@ -165,7 +165,7 @@ body {
 }
 
 .mainHeader img {
-	width: 25%;
+	width: 15%;
 	height: auto;
 	margin: 3% 0;
 }

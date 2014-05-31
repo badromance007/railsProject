@@ -1,8 +1,8 @@
 <article>
 			<header>
-				<h1>
+				<h2>
 					<a href="<%= article_path(@article) %>" rel="bookmark" title="Permalink to <%= @article.title %>"><%= @article.title %></a>
-				</h1>
+				</h2>
 			</header>
 			
 			<footer>

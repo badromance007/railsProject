@@ -1,2 +1,8 @@
-<h1>Welcome to Tường Nguyễn Blog!</h1>
-<%= link_to 'Tường Nguyễn Blog', controller: 'articles' %>
+<% provide(:active_home, 'class=active') %>
+
+<div class="container" class="center">
+	<div class="center hero-unit">
+		<h1>Welcome to Tường Nguyễn Blog!</h1>
+		<a href="<%= articles_path %>" class="btn btn-large btn-primary" id="blogButton" >Tường Nguyễn Blog</a>
+	</div>
+</div>
