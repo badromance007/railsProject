@@ -1,8 +1,14 @@
 <% provide(:active_home, 'class=active') %>
+<% provide(:welcome_background, 'class=welcome_bg') %>
 
-<div class="container">
-	<div class="center hero-unit">
+<div class="center">
+	<div class="center hero-unit" >
 		<h1>Welcome to Tường Nguyễn Blog!</h1>
+		<h2>
+		  Nơi chia sẻ những ý tưởng hay học hỏi được và kinh nghiệm cá nhân khi áp dụng chúng.
+  	</h2>
 		<a href="<%= articles_path %>" class="btn btn-large btn-primary" id="blogButton" >Tường Nguyễn Blog</a>
 	</div>
 </div>
+
+<%= render "welcome/mainFooter" %>

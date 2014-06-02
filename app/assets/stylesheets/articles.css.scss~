@@ -67,9 +67,12 @@ a:hover, a:active {
 }
 
 .post-info {
-	font-style: italic;
-	color: #369;
+	color: #000000;
 	font-size: 85%;
+}
+
+.post-info span, .post-info span a {
+	color: #ff6634;
 }
 
 /* ===========================
@@ -85,28 +88,6 @@ a:hover, a:active {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-}
-
-/* ===========================
-   ========= Footer ========== 
-   =========================== */
-.mainFooter {
-	width: 100%;
-	float: left;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	padding-left: 0;
-	color: #666;
-	border-top: 1px solid #ddd;
-}
-
-.mainFooter p {
-	width: 30%;
-	margin: 2% auto;
-}
-
-.mainFooter a {
-	color: #08c;
 }
 
 /* ===========================
@@ -189,6 +170,7 @@ a:hover, a:active {
 	
 	.topcontent {
 		padding: 2% 5%;
+		margin-top: 4%;
 		margin-bottom: 4%;
 	}
 	.topcontent:last-child {

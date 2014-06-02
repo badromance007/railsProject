@@ -6,7 +6,8 @@
 			</header>
 			
 			<footer>
-				<p class="post-info">This was posted on <%= @article.created_at.to_s(:long) %> by Tường Trọng Nguyễn</p>
+				<p class="post-info">Được viết bởi <span>Tường Trọng Nguyễn</span> | <%= @article.created_at.to_s(:long) %> | <span><%= link_to " #{@article.comments.count} bình luận »", :anchor => "comments_content" %></span>
+				</p>
 			</footer>
 			
 			<div class="detailContent">

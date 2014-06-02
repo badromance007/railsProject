@@ -5,13 +5,72 @@
 
 #blogButton {
 	color: #fff;
-	padding: 1%;
+	padding: 1.5%;
 }
 
 .center {
 	margin-right: auto;
 	margin-left: auto;
-	width: 65%;
 	text-align: center;
-	margin-top: -3%;
+	margin-top: 2%;
+	background: url('http://images.apple.com/iphone-5s/powerful/images/app_background_starwalk.jpg') no-repeat;
+  background-size: 100% 300%;
+}
+
+.center h1 {
+	font-size: 2.5em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+	font-weight: lighter;
+}
+
+.center h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #0088cc;
+}
+
+
+/* footer */
+
+footer.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+  clear: both;
+}
+
+footer.footer a {
+  color: #08c;
+}
+
+footer.footer a:hover {
+  color: #222;
+}
+
+footer.footer small {
+  float: left;
+}
+
+footer.footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer.footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+
+@media only screen and (min-width : 150px) and (max-width : 780px){
+	.center h1 {
+		font-size: 1.5em;
+	}
 }

@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+    Copyright © 2014 <a href="<%= welcome_index_path %>">Tường Nguyễn Blog</a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "Giới thiệu",   '#' %></li>
+      <li><%= link_to "Liên Hệ", '#' %></li>
+      <li><%= link_to "Blog", '#' %></li>
+      <li><a href="#">Đăng nhập</a></li>
+    </ul>
+  </nav>
+</footer>

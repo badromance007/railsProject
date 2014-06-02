@@ -1,3 +1,5 @@
+<% provide(:active_blog, "class=active") %>
+
 <h1>Tất cả các bài viết đều nằm ở đây</h1>
 
 <%= link_to 'Viết bài mới', new_article_path %>
