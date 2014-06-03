@@ -1,0 +1,28 @@
+<div class="mainContent">
+	<div class="content">
+	<% @articles.each do |article| %>
+		<article class="topcontent">
+			<header>
+				<h2>
+					<a href="<%= article_path(article) %>" rel="bookmark" title="Permalink to <%= article.title %>"><%= article.title %></a>
+				</h2>
+			</header>
+			
+			<footer>
+				<p class="post-info">
+					<img src="/assets/ico-cal.gif"> <%= article.created_at.to_s(:long) %> 
+					
+					<span><img src="/assets/ico-com.gif"> <%= article.comments.count %> bình luận</span>
+				</p>
+			</footer>
+			
+			<div class="detailContent">
+				<p><%= simple_format(article.text) %></p>
+			</div>
+		</article>
+	<% end %>
+	</div>
+	
+		<%= render 'sidebar' %>
+</div> <!-- end mainContent -->
+

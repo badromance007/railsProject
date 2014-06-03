@@ -1,0 +1,19 @@
+<article>
+			<header>
+				<h1>
+					<a href="<%= article_path(@article) %>" rel="bookmark" title="Permalink to <%= @article.title %>"><%= @article.title %></a>
+				</h1>
+			</header>
+			
+			<footer>
+				<p class="post-info">Được viết bởi 
+					<span><img src="/assets/authorz.png"> Tường Trọng Nguyễn</span> | 
+					<img src="/assets/ico-cal.gif"> <%= @article.created_at.to_s(:long) %> | 
+					<span><img src="/assets/ico-com.gif"> <%= link_to " #{@article.comments.count} bình luận »", :anchor => "comments_content" %></span>
+				</p>
+			</footer>
+			
+			<div class="detailContent">
+				<p><%= simple_format(@article.text) %></p>
+			</div>
+</article>

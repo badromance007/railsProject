@@ -1,0 +1,20 @@
+<% provide(:active_blog, "class=active") %>
+
+
+<div class="topcontent">
+	<!-- post detail -->
+	<%= render 'postdetail' %>
+
+
+	<!-- comments content -->
+	<h2 id="header_comments">Ý kiến bạn đọc</h2>
+	<%= render @article.comments %>
+
+	<!-- comments form -->
+	<%= render "comments/form" %>
+
+	<%= link_to 'Quay lại', articles_path %>
+	| <%= link_to 'Chỉnh sửa', edit_article_path(@article) %>
+</div>
+
+<%= render "welcome/mainFooter" %>

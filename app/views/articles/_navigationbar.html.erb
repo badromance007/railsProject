@@ -1,0 +1,11 @@
+<header class="mainHeader">
+	<img src="/assets/tuongnguyen.jpg">
+	<nav>
+		<ul>
+			<li <%= yield(:active_home) %> ><a href="<%= welcome_index_path %>">Trang chủ</a></li>
+			<li <%= yield(:active_about) %> ><a href="<%= welcome_about_path %>">Giới thiệu</a></li>
+			<li <%= yield(:active_blog) %> ><a href="<%= articles_path %>">Blog</a></li>
+			<li <%= yield(:active_contact) %> ><a href="<%= welcome_contact_path %>">Liên hệ</a></li>
+		</ul>
+	</nav>
+</header>
