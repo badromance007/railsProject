@@ -9,7 +9,7 @@
 			</header>
 			
 			<footer>
-				<p class="post-info"><%= article.created_at.to_s(:long) %> | <span><%= link_to " #{article.comments.count} bình luận »", article_path(article) + "#comments_content" %></span></p>
+				<p class="post-info"><%= article.created_at.to_s(:long) %> | <span><%= article.comments.count %> bình luận</span></p>
 			</footer>
 			
 			<div class="detailContent">
@@ -19,25 +19,6 @@
 	<% end %>
 	</div>
 	
-		<aside class="top-sidebar">
-			<article>
-				<h2>Bài viết mới nhất</h2>
-				<p>Đây là phần dành cho bài viết mới nhất, nội dung sẽ được thêm sau.</p>
-			</article>
-		</aside>
-		
-		<aside class="middle-sidebar">
-			<article>
-				<h2>Xem nhiều nhất</h2>
-				<p>Đây là phần dành cho bài viết được xem nhiều nhất, nội dung sẽ được thêm sau.</p>
-			</article>
-		</aside>
-		
-		<aside class="bottom-sidebar">
-			<article>
-				<h2>Thể loại</h2>
-				<p>Đây là phần dành cho thể loại bài viết, nội dung sẽ được thêm sau.</p>
-			</article>
-		</aside>
+		<%= render '_sidebar' %>
 </div> <!-- end mainContent -->
 

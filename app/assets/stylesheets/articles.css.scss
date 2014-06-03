@@ -49,10 +49,10 @@ a:link, a:visited {
 }
 
 .topcontent h2 {
-	font-size: 20px;
+	font-size: 1.35em;
 }
 .topcontent h1 {
-	font-size: 24px;
+	font-size: 1.4em;
 }
 
 .topcontent {
@@ -96,6 +96,15 @@ a:link, a:visited {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
+
+.top-sidebar h2, .middle-sidebar h2, .bottom-sidebar h2 {
+	font-size: 1.25em;
+}
+
+.top-sidebar p a {
+	color: #07c;
+}
+
 
 /* ===========================
    ====== Media Queries ====== 

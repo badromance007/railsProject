@@ -49,10 +49,10 @@ a:link, a:visited {
 }
 
 .topcontent h2 {
-	font-size: 20px;
+	font-size: 1.35em;
 }
 .topcontent h1 {
-	font-size: 20px;
+	font-size: 1.4em;
 }
 
 .topcontent {
@@ -95,6 +95,10 @@ a:link, a:visited {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+}
+
+.top-sidebar h2, .middle-sidebar h2, .bottom-sidebar h2 {
+	font-size: 1.25em;
 }
 
 /* ===========================

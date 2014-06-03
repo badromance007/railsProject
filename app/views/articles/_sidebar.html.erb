@@ -1,0 +1,23 @@
+<aside class="top-sidebar">
+	<article>
+		<h2>Bài viết mới nhất</h2>	
+		<% @posts.each do |post| %>
+      <p><a href="<%= article_path(post) %>" rel="bookmark" title="Permalink to <%= post.title %>"><%= post.title %></a></p>
+      <hr>
+		<% end %>
+	</article>
+</aside>
+		
+<aside class="middle-sidebar">
+	<article>
+		<h2>Xem nhiều nhất</h2>
+		<p>Đây là phần dành cho bài viết được xem nhiều nhất, nội dung sẽ được thêm sau.</p>
+	</article>
+</aside>
+		
+<aside class="bottom-sidebar">
+	<article>
+		<h2>Thể loại</h2>
+		<p>Đây là phần dành cho thể loại bài viết, nội dung sẽ được thêm sau.</p>
+	</article>
+</aside>

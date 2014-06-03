@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   
   def index
   	@articles = Article.all(:order => "created_at DESC")
+  	@posts = Article.includes(:comments).order("created_at DESC").limit(3)
   end
   
   def create
