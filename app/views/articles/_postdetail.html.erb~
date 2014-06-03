@@ -6,8 +6,10 @@
 			</header>
 			
 			<footer>
-				<p class="post-info">Được viết bởi <span>Tường Trọng Nguyễn</span> | <%= @article.created_at.to_s(:long) %> | <a href="#" ><span><%= @article.comments.count %> bình luận &#187;</span></a>
-				<span><%= link_to " #{@article.comments.count} bình luận ", :anchor => "comments_content" %> &#187;</span>
+				<p class="post-info">Được viết bởi 
+					<span><img src="/assets/authorz.png"> Tường Trọng Nguyễn</span> | 
+					<img src="/assets/ico-cal.gif"> <%= @article.created_at.to_s(:long) %> | 
+					<span><img src="/assets/ico-com.gif"> <%= link_to " #{@article.comments.count} bình luận »", :anchor => "comments_content" %></span>
 				</p>
 			</footer>
 			

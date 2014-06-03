@@ -9,7 +9,11 @@
 			</header>
 			
 			<footer>
-				<p class="post-info"><%= article.created_at.to_s(:long) %> | <span><%= article.comments.count %> bình luận</span></p>
+				<p class="post-info">
+					<img src="/assets/ico-cal.gif"> <%= article.created_at.to_s(:long) %> &nbsp;
+					
+					<span><img src="/assets/ico-com.gif"> <%= article.comments.count %> bình luận</span>
+				</p>
 			</footer>
 			
 			<div class="detailContent">

@@ -82,6 +82,10 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
+.post-info img {
+	margin-bottom: 2.7px;
+}
+
 /* ===========================
    ======== Sidebar ========== 
    =========================== */
@@ -100,6 +104,11 @@ a:link, a:visited {
 .top-sidebar h2, .middle-sidebar h2, .bottom-sidebar h2 {
 	font-size: 1.25em;
 }
+
+.top-sidebar p a {
+	color: #07c;
+}
+
 
 /* ===========================
    ====== Media Queries ====== 
