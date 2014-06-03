@@ -14,6 +14,7 @@
 	text-align: center;
 	margin-top: 2%;
 	background: url('/assets/app_background_starwalk.jpg') no-repeat;
+	background-color: #E8BCBC;
   background-size: 100% 300%;
 }
 
@@ -41,6 +42,10 @@
 	-webkit-font-smoothing: antialiased;
 	text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 	font-weight: lighter;
+}
+
+.center p a {
+	 color: #0088cc;
 }
 
 /* footer */
