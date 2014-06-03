@@ -9,7 +9,7 @@
 			</header>
 			
 			<footer>
-				<p class="post-info"><%= article.created_at.to_s(:long) %> | <span><%= link_to " #{@article.comments.count} bình luận »", :anchor => "comments_content" %></span></p>
+				<p class="post-info"><%= article.created_at.to_s(:long) %> | <span><%= link_to " #{article.comments.count} bình luận »", article_path(article) + "#comments_content" %></span></p>
 			</footer>
 			
 			<div class="detailContent">

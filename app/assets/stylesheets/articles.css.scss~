@@ -24,8 +24,7 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
-a:hover, a:active {
-	color: #08c;
+.topcontent a:hover, .topcontent a:active {
 	text-decoration: none;
 }
 
@@ -47,6 +46,13 @@ a:hover, a:active {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+}
+
+.topcontent h2 {
+	font-size: 20px;
+}
+.topcontent h1 {
+	font-size: 20px;
 }
 
 .topcontent {
@@ -73,6 +79,7 @@ a:hover, a:active {
 
 .post-info span, .post-info span a {
 	color: #ff6634;
+	text-decoration: none;
 }
 
 /* ===========================

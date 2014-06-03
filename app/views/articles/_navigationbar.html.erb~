@@ -4,7 +4,7 @@
 		<ul>
 			<li <%= yield(:active_home) %> ><a href="<%= welcome_index_path %>">Trang chủ</a></li>
 			<li <%= yield(:active_about) %> ><a href="#">Giới thiệu</a></li>
-			<li <%= yield(:active_blog) %> ><a href="#">Blog</a></li>
+			<li <%= yield(:active_blog) %> ><a href="<%= articles_path %>">Blog</a></li>
 			<li <%= yield(:active_contact) %> ><a href="#">Liên hệ</a></li>
 		</ul>
 	</nav>

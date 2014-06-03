@@ -4,9 +4,9 @@
   </small>
   <nav>
     <ul>
-      <li><%= link_to "Giới thiệu",   '#' %></li>
+      <li><%= link_to "Giới thiệu",    welcome_index_path %></li>
       <li><%= link_to "Liên Hệ", '#' %></li>
-      <li><%= link_to "Blog", '#' %></li>
+      <li><%= link_to "Blog", articles_path %></li>
       <li><a href="#">Đăng nhập</a></li>
     </ul>
   </nav>

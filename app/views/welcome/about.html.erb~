@@ -1,0 +1,20 @@
+<% provide(:active_about, 'class=active') %>
+<% provide(:welcome_background, 'class=welcome_bg') %>
+
+<div class="center">
+	<div class="center hero-unit" >
+		<h1>Giới thiệu</h1>
+		<p>
+		  Tường Nguyễn Blog là một blog chuyên về chia sẻ kinh nghiệm, ý tưởng hay. Blog được thành lập vào ngày 1/6/2014 với chủ nhân chính là Tường Trọng Nguyễn sinh năm 1993 và hiện đang sống và làm việc tại thành phố Hồ Chí Minh.
+  	</p>
+  	<p>
+  		Blog này chỉ tập trung mạnh nhất vào những ý tưởng hay, thiết thực như quản lý thời gian, phát triển bản thân,... Tuy nhiên vẫn mở rộng ra thêm nhiều lĩnh vực khác như lập trình, các vấn đề tin học, ...
+  	</p>
+  	<p>
+  		Các bài viết trên đây mang ý kiến và cách nhìn chủ quan được viết bởi Tường Trọng Nguyễn thông qua kinh nghiệm cá nhân, học hỏi và sưu tầm từ nhiều nguồn khác nhau.
+  	</p>
+	</div>
+</div>
+
+<%= render "welcome/mainFooter" %>
+
